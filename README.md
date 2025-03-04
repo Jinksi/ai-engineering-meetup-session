@@ -2,8 +2,8 @@
 
 Slides for an AI Engineering primer talk I gave at a team meetup.
 
-[Slides dark theme](./AI%20Engineering%20Primer%20-%20Dark.pdf)
-[Slides light theme](./AI%20Engineering%20Primer%20-%20Light.pdf)
+- [Slides dark theme](./AI%20Engineering%20Primer%20-%20Dark.pdf)
+- [Slides light theme](./AI%20Engineering%20Primer%20-%20Light.pdf)
 
 ## Setup
 
@@ -35,7 +35,6 @@ This information tells us how likely a word is to appear in a given context.
 
 ```
 My favourite colour is _
-
 ```
 
 A language model should predict `blue` more often than `car`.
@@ -50,7 +49,9 @@ A character, a word, or a part of a word (like `-tion`).
 
 The set of all tokens a model can work with is the model’s **_vocabulary_**.
 
-![](./images/tokens.png)
+![tokens](./images/tokens.png)
+
+_Image source - [AI Engineering – Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)_
 
 ---
 
@@ -61,6 +62,8 @@ To generate the next token, the model computes the probabilities of all tokens i
 Sampling refers to how the model chooses the next token.
 
 <img src="./images/sampling.png" alt="sampling" width="80%" />
+
+_Image source - [AI Engineering – Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)_
 
 ---
 
@@ -84,6 +87,8 @@ Larger logit values correspond to higher probabilities.
 
 <img src="./images/logits.png" alt="logits" width="50%" />
 
+_Image source - [AI Engineering – Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)_
+
 ---
 
 ## Sampling: Logprobs
@@ -95,6 +100,8 @@ Higher logprob values (closer to zero) indicate greater certainty in a token’s
 Not all model providers expose logprobs.
 
 <img src="./images/logprobs.png" alt="logprobs" width="80%" />
+
+_Image source - [AI Engineering – Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)_
 
 ---
 
@@ -264,11 +271,9 @@ Workflows are a way to orchestrate AI tools to solve tasks more complex than a s
 
 Agents choose which tools to use based on the input (e.g. user prompt) and the tool's documentation.
 
-<img src="./images/workflows-agents.jpg" alt="Agents and Workflows" width="50%" />
-
----
-
 <img src="./images/workflows-agents.jpg" alt="Agents and Workflows" width="80%" />
+
+_Image source - [AI Hero](https://www.aihero.dev/building-effective-agents)_
 
 ---
 
